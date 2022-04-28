@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    height: 100vh;
 }
 
 .header,
@@ -11,8 +12,22 @@ body {
     background-color: #1f2937;
 }
 
+.header,
+.hero,
+.footer,
+.content,
+.quote{
+    padding: 0 10% 0 10%;
+}
+
 .hero {
     flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    gap: 48px;
 }
 
 .content {
@@ -30,12 +45,13 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+
 }
 
 ul {
@@ -43,12 +59,135 @@ ul {
     display: flex;
     gap: 16px;
 }
-
+.secondary.hero,
 a {
     text-decoration: none;
     color: #E5E7EB;
 }
 
+.hero.image{
+    height: 200px;
+    width: 400px;
+    background-color: grey;
+    padding: 0;
+    min-width: 400px;
+}
+
 .container {
-    margin: 0 25% 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0;
+}
+
+.container .main {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.container .secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+button{
+    background-color: #3882F6;
+    color: white;
+    padding: 8px 24px ;
+    border-radius: 10px;
+    border: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    border-color: #3882F6 ;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30% 0 30%;
+
+}
+
+.card {
+    flex: 0 0 0;
+    text-align: center;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    font-weight: extra-bold;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 0 20% 18px 20%;
+
+
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.quote-signature {
+    text-align: right;
+    margin: 0;
+}
+
+button .signup-box {
+    border: 3px solid white;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    padding:  60px;
+}
+
+.signup-box {
+    background-color: #3882F6;
+    width: 60%;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-button {
+    border: 2px solid white;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-text {
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.footer {
+    color:#E5E7EB;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
 }
